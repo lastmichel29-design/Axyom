@@ -1,0 +1,21 @@
+meta:
+  conjunto: "legal"
+  version:  "3.0.0"
+  normativa_base: "Ley 19.880"
+
+simples:
+  - id:          "L001"
+    descripcion: "Expediente debe tener rol"
+    campo:       "rol"
+    condicion:   "no_vacio"
+    normativa:   "Ley 19.880"
+    severidad:   "critico"
+
+  - id:          "L002"
+    descripcion: "Expediente debe tener fecha"
+    campo:       "fecha"
+    condicion:   "no_vacio"
+    normativa:   "Ley 19.880"
+    severidad:   "medio"
+
+condicionales: []

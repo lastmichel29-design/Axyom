@@ -1,0 +1,14 @@
+C:\Users\lastm\OneDrive\Desktop\axyom_v7_completo\axyom_v7\target\release\deps\serde-1d109e22b6f854e2.d: C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\lastm\OneDrive\Desktop\axyom_v7_completo\axyom_v7\target\release\build\serde-2a66408f8dbb2e76\out/private.rs
+
+C:\Users\lastm\OneDrive\Desktop\axyom_v7_completo\axyom_v7\target\release\deps\libserde-1d109e22b6f854e2.rlib: C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\lastm\OneDrive\Desktop\axyom_v7_completo\axyom_v7\target\release\build\serde-2a66408f8dbb2e76\out/private.rs
+
+C:\Users\lastm\OneDrive\Desktop\axyom_v7_completo\axyom_v7\target\release\deps\libserde-1d109e22b6f854e2.rmeta: C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\lastm\OneDrive\Desktop\axyom_v7_completo\axyom_v7\target\release\build\serde-2a66408f8dbb2e76\out/private.rs
+
+C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\lastm\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+C:\Users\lastm\OneDrive\Desktop\axyom_v7_completo\axyom_v7\target\release\build\serde-2a66408f8dbb2e76\out/private.rs:
+
+# env-dep:OUT_DIR=C:\\Users\\lastm\\OneDrive\\Desktop\\axyom_v7_completo\\axyom_v7\\target\\release\\build\\serde-2a66408f8dbb2e76\\out

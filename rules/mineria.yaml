@@ -1,0 +1,64 @@
+# ============================================================
+# AXYOM Auditor v7.0 — Reglas de Minería
+# Normativa: DS 44/2024 MINTRAB / Ley 16.744 / DS 594 / DS 40
+# Versión: 3.0.0
+# Autor: Michel Antonio Duran Cornejo — Chile 2026
+#
+# IMPORTANTE: No modificar sin actualizar el campo 'version'.
+# El hash de este archivo forma parte de la cadena de custodia.
+# ============================================================
+
+meta:
+  conjunto: "mineria"
+  version:  "3.0.0"
+  normativa_base: "DS 44/2024, Ley 16.744"
+
+simples:
+  - id:          "M001"
+    descripcion: "EPP asignado obligatorio"
+    campo:       "epp_asignado"
+    condicion:   "no_vacio"
+    normativa:   "DS 44/2024 art. 37"
+    severidad:   "critico"
+
+  - id:          "M002"
+    descripcion: "Fecha de contrato obligatoria"
+    campo:       "fecha_contrato"
+    condicion:   "no_vacio"
+    normativa:   "Ley 16.744"
+    severidad:   "medio"
+
+  - id:          "M003"
+    descripcion: "Examen médico debe estar APROBADO"
+    campo:       "examen_medico"
+    condicion:   "igual_a"
+    valor:       "APROBADO"
+    normativa:   "DS 594"
+    severidad:   "critico"
+
+  - id:          "M004"
+    descripcion: "Capacitación de seguridad obligatoria"
+    campo:       "capacitacion_seguridad"
+    condicion:   "no_vacio"
+    normativa:   "DS 40"
+    severidad:   "medio"
+
+condicionales:
+  - id:                  "MC001"
+    descripcion:         "Si examen APROBADO → capacitación no puede faltar"
+    campo_si:            "examen_medico"
+    condicion_si:        "igual_a"
+    valor_si:            "APROBADO"
+    campo_entonces:      "capacitacion_seguridad"
+    condicion_entonces:  "no_vacio"
+    normativa:           "DS 40"
+    severidad:           "medio"
+
+  - id:                  "MC002"
+    descripcion:         "Si existe contrato → EPP debe estar asignado"
+    campo_si:            "fecha_contrato"
+    condicion_si:        "no_vacio"
+    campo_entonces:      "epp_asignado"
+    condicion_entonces:  "no_vacio"
+    normativa:           "DS 44/2024 art. 37"
+    severidad:           "critico"

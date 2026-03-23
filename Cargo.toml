@@ -1,0 +1,68 @@
+[package]
+name        = "axyom"
+version     = "7.0.0"
+edition     = "2021"
+authors     = ["Michel Antonio Duran Cornejo <axyom@chile.dev>"]
+description = "AXYOM Auditor v7.0 — reglas YAML externas, streaming CSV, API REST"
+
+[[bin]]
+name = "axyom"
+path = "src/main.rs"
+
+[lib]
+name = "axyom"
+path = "src/lib.rs"
+
+[dependencies]
+# Serialización
+serde       = { version = "1",    features = ["derive"] }
+serde_json  = "1"
+serde_yaml  = "0.9"
+
+# Hash
+sha3        = "0.10"
+hex         = "0.4"
+
+# Tiempo
+chrono      = { version = "0.4", features = ["serde"] }
+
+# CLI
+clap        = { version = "4",    features = ["derive"] }
+
+# Output visual
+colored     = "2"
+
+# PDF legal — mismas versiones que v6 (f32 obligatorio)
+printpdf    = "0.7"
+
+# Conectores de datos
+calamine    = "0.24"          # Excel — worksheet_range() devuelve Result
+csv         = "1.3"
+
+# Paralelismo
+rayon       = "1.9"
+
+# HTTP connector
+reqwest     = { version = "0.12", features = ["json","blocking","rustls-tls"], default-features = false }
+
+# SQL connector
+sqlx        = { version = "0.7", features = ["sqlite","runtime-tokio-rustls"] }
+tokio       = { version = "1",   features = ["rt-multi-thread","macros"] }
+
+# API REST (v7 nuevo)
+axum        = { version = "0.7", features = ["json"] }
+
+# Errores
+thiserror   = "1"
+
+# Versiones pinneadas — crítico, NO cambiar
+zstd-sys    = "=2.0.8+zstd.1.5.5"
+zstd-safe   = "=6.0.6"
+zstd        = "=0.13.0"
+
+[dev-dependencies]
+tempfile    = "3"
+
+[profile.release]
+opt-level = 3
+strip     = true       # Binario más pequeño para distribución

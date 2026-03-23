@@ -1,0 +1,21 @@
+meta:
+  conjunto: "banca"
+  version:  "3.0.0"
+  normativa_base: "CMF Circular 3.507"
+
+simples:
+  - id:          "B001"
+    descripcion: "Cliente debe tener RUT válido"
+    campo:       "rut"
+    condicion:   "no_vacio"
+    normativa:   "CMF Circular 3.507"
+    severidad:   "critico"
+
+  - id:          "B002"
+    descripcion: "Cuenta debe tener estado activo"
+    campo:       "estado_cuenta"
+    condicion:   "no_vacio"
+    normativa:   "CMF Circular 3.507"
+    severidad:   "medio"
+
+condicionales: []
